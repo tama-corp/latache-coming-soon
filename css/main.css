@@ -1,6 +1,7 @@
 :root {
     --font-accent: Clash Display Variable, 'sans-serif';
     --font-size-fluid-00: clamp(.72rem, .75rem + .9vw, .95rem);
+    --font-size-fluid-1: clamp(1.2rem, 3vw, 1.7rem);
     --font-size-fluid-2: clamp(1.7rem, 3vw, 1.955rem);
     --color-neutral-400: hsl(200, 26%, 18%);
     --color-neutral-600: hsl(201, 18%, 16%);
@@ -55,6 +56,10 @@ h1 {
     font-size: var(--font-size-fluid-2)
 }
 
+h2 {
+    font-size: var(--font-size-fluid-1)
+}
+
 a {
     color: var(--color-neutral-600);
     font-weight: 600
@@ -73,4 +78,10 @@ p {
     font-size: 1.15rem;
     font-family: var(--font-accent);
     color: var(--color-neutral-400)
+}
+
+@media screen and (min-width: 67.5rem) {
+    p {
+        font-size: 1.25rem;
+    }
 }
