@@ -1,0 +1,16 @@
+:root {
+    --font-primary: 'Clash Display', 'sans-serif';
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+header[role="banner"] {
+
+}
+
+p {
+    font-family: var(--font-primary);
+}

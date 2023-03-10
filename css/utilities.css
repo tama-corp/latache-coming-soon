@@ -1,0 +1,16 @@
+/* colors */
+.bg-pink {
+    background-color: hsl(0, 100%, 91%);
+}
+
+.bg-light-blue {
+    background-color: hsl(213, 100%, 91%);
+}
+
+/* layouts */
+.margin-inline-auto {
+    margin-inline: auto;
+}
+
+
+/* fonts */
