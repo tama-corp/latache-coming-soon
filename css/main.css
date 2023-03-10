@@ -1,16 +1,76 @@
 :root {
-    --font-primary: 'Clash Display', 'sans-serif';
+    --font-accent: Clash Display Variable, 'sans-serif';
+    --font-size-fluid-00: clamp(.72rem, .75rem + .9vw, .95rem);
+    --font-size-fluid-2: clamp(1.7rem, 3vw, 1.955rem);
+    --color-neutral-400: hsl(200, 26%, 18%);
+    --color-neutral-600: hsl(201, 18%, 16%);
 }
 
-body {
-    display: grid;
-    place-items: center;
+.flow > * + * {
+    margin-top: var(--flow-space, 1em)
+}
+
+.wrapper {
+    margin-inline: auto;
+    padding-inline: clamp(var(--wrapper-padding-min, 1.09rem), 1rem + 0.47vw, 1.33rem);
+    max-width: 60rem
+}
+
+.gap-top-700 {
+    margin-block-start: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem)
+}
+
+.gap-top-800 {
+    margin-block-start: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem)
+}
+
+.bg-light-blue {
+    background-color: hsl(213, 100%, 91%);
 }
 
 header[role="banner"] {
+    padding-block-start: 2em
+}
 
+.logo {
+    max-width: 12rem
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 2;
+}
+
+h1, h2 {
+    font-family: var(--font-accent);
+    font-weight: 500;
+    color: var(--color-neutral-600)
+}
+
+h1 {
+    font-size: var(--font-size-fluid-2)
+}
+
+a {
+    color: var(--color-neutral-600);
+    font-weight: 600
+}
+
+footer > p {
+    font-size: var(--font-size-fluid-00);
+    margin-inline: auto;
+    max-width: max-content;
+    padding-block: 2em;
 }
 
 p {
-    font-family: var(--font-primary);
+    max-width: 52ch;
+    line-height: 1.6;
+    font-size: 1.15rem;
+    font-family: var(--font-accent);
+    color: var(--color-neutral-400)
 }
